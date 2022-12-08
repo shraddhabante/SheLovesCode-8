@@ -5,8 +5,7 @@
 .main-div {
     width: 100%;
     height: auto;
-    /* display: flex;
-    flex-direction: row; */
+
 }
 
 .style-div {
@@ -44,43 +43,59 @@ p {
     margin-left: 15px;
 }
 
-.list>li {
+li {
     margin-bottom: 10px;
 }
-
-#btn {
-    border: 1px solid red;
-    color: red;
-    height: 40px;
-    width: 70%;
-    margin-left: 30px;
+button{
+    width: auto;
+    height: 0;
+    background-color: white;
+    border: none;
+    text-align: center;
+    margin-top:  0 10px;
     cursor: pointer;
 }
+.btn {
+    border: 1px solid red;
+    color: red;
+    background-color: white;
+    width: auto;
+    height: 25px;
+    padding: 10px;
+    padding-bottom: 20px;
+    text-align: center;
 
+}
+
+@media screen and (max-width:400px){
+    .style-div{
+        width: 100%;
+        height: auto;
+    }
+} 
 @media screen and (min-width:400px) {
     .style-div {
-        width: 100%;
+        width: 98%;
         height: auto;
         margin-bottom: 20px;
     }
-
     p,
     li {
         font-size: 20px;
     }
-
-    .div1 {
+   .div1 {
         width: auto;
-        height: 400px;
+        height: 350px;
     }
-
-    img {
+   img {
         width: 80%;
-        margin-left: 90px;
+        margin-left: 60px;
     }
-}
+} 
 
-@media screen and (min-width:768px) {
+
+
+ @media screen and (min-width:768px) {
     .style-div {
         width: 47%;
         height: auto;
@@ -96,7 +111,7 @@ p {
     .btn {
         height: 30px;
     }
-}
+ }
 
 @media screen and (min-width:1024px) {
     .style-div {
@@ -139,4 +154,4 @@ p {
     .btn {
         height: 30px;
     }
-}
+}  
